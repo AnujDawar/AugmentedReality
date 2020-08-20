@@ -1,0 +1,340 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &130916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 488580}
+  - component: {fileID: 11427236}
+  m_Layer: 0
+  m_Name: ImageTracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &131830
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 494530}
+  - component: {fileID: 114000012657538596}
+  m_Layer: 0
+  m_Name: Arena
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &488580
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130916}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4736094053541072}
+  - {fileID: 4752616126803154}
+  - {fileID: 4569135503578248}
+  - {fileID: 494530}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &494530
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131830}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 488580}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11427236
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 822067672, guid: 74f59eb22abf947599d3aecf24b954b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnTargetsLoaded:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Wikitude.TrackerBehaviour+OnTargetsLoadedEvent, WikitudeUnityPlugin,
+      Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+  OnErrorLoadingTargets:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Wikitude.TrackerBehaviour+OnErrorLoadingTargetsEvent, WikitudeUnityPlugin,
+      Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+  OnExtendedTrackingQualityChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Wikitude.ImageTracker+OnExtendedTrackingQualityChangedEvent, WikitudeUnityPlugin,
+      Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+  _targetSourceType: 0
+  _targetCollectionResource:
+    _targetPath: Wikitude/tdcards.wtc
+    _useCustomURL: 0
+    OnFinishLoading:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Wikitude.TargetCollectionResource+OnFinishLoadingEvent, WikitudeUnityPlugin,
+        Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+    OnErrorLoading:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Wikitude.TargetCollectionResource+OnErrorLoadingEvent, WikitudeUnityPlugin,
+        Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+  _cloudRecognitionService:
+    _clientToken: 
+    _groupId: 
+    _targetCollectionId: 
+    _serverRegion: 0
+    _customServerURL: 
+    OnInitialized:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Wikitude.CloudRecognitionService+OnInitializedEvent, WikitudeUnityPlugin,
+        Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+    OnInitializationError:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Wikitude.CloudRecognitionService+OnInitializationErrorEvent, WikitudeUnityPlugin,
+        Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+    OnRecognitionResponse:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Wikitude.CloudRecognitionService+OnRecognitionResponseEvent, WikitudeUnityPlugin,
+        Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+    OnRecognitionError:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Wikitude.CloudRecognitionService+OnRecognitionErrorEvent, WikitudeUnityPlugin,
+        Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+    OnInterruption:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Wikitude.CloudRecognitionService+OnInterruptionEvent, WikitudeUnityPlugin,
+        Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+  _maximumNumberOfConcurrentTrackableTargets: 6
+  _rangeExtension: 2
+  _trackerEfficiencyMode: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 130916}
+  m_IsPrefabAsset: 1
+--- !u!1 &1087618010675230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4569135503578248}
+  - component: {fileID: 114944431608181288}
+  m_Layer: 0
+  m_Name: Tower
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1237999500649222
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4752616126803154}
+  - component: {fileID: 114474008748465890}
+  m_Layer: 0
+  m_Name: Home
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1333016186490696
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4736094053541072}
+  - component: {fileID: 114070328379665662}
+  m_Layer: 0
+  m_Name: Goob
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4569135503578248
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1087618010675230}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 488580}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4736094053541072
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1333016186490696}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 488580}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4752616126803154
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1237999500649222}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 488580}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114000012657538596
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1550001261, guid: 74f59eb22abf947599d3aecf24b954b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetPattern: 
+  _drawable: {fileID: 1989249294919678, guid: 188cb3e1e6d29904faa9f3d11e2af692, type: 2}
+  _autoToggleVisibility: 1
+  _extendedTracking: 0
+  _targetsForExtendedTracking: []
+  OnImageRecognized:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Wikitude.ImageTrackable+OnImageRecognizedEvent, WikitudeUnityPlugin,
+      Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+  OnImageLost:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Wikitude.ImageTrackable+OnImageLostEvent, WikitudeUnityPlugin, Version=8.1.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &114070328379665662
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1333016186490696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1550001261, guid: 74f59eb22abf947599d3aecf24b954b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetPattern: startcard
+  _drawable: {fileID: 1964750854033150, guid: 7e4c444f08c909041815dbc8efa80131, type: 2}
+  _autoToggleVisibility: 1
+  _extendedTracking: 0
+  _targetsForExtendedTracking: []
+  OnImageRecognized:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Wikitude.ImageTrackable+OnImageRecognizedEvent, WikitudeUnityPlugin,
+      Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+  OnImageLost:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Wikitude.ImageTrackable+OnImageLostEvent, WikitudeUnityPlugin, Version=8.1.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &114474008748465890
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1237999500649222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1550001261, guid: 74f59eb22abf947599d3aecf24b954b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetPattern: homecard
+  _drawable: {fileID: 1147514436036170, guid: 82b94dbc4980b47c6b506c3d9825fdfe, type: 2}
+  _autoToggleVisibility: 1
+  _extendedTracking: 0
+  _targetsForExtendedTracking: []
+  OnImageRecognized:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Wikitude.ImageTrackable+OnImageRecognizedEvent, WikitudeUnityPlugin,
+      Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+  OnImageLost:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Wikitude.ImageTrackable+OnImageLostEvent, WikitudeUnityPlugin, Version=8.1.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &114944431608181288
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1087618010675230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1550001261, guid: 74f59eb22abf947599d3aecf24b954b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetPattern: towercard
+  _drawable: {fileID: 1649707322273022, guid: 90f1fd253817e5f42a259450ea730504, type: 2}
+  _autoToggleVisibility: 1
+  _extendedTracking: 0
+  _targetsForExtendedTracking: []
+  OnImageRecognized:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Wikitude.ImageTrackable+OnImageRecognizedEvent, WikitudeUnityPlugin,
+      Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+  OnImageLost:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Wikitude.ImageTrackable+OnImageLostEvent, WikitudeUnityPlugin, Version=8.1.0.0,
+      Culture=neutral, PublicKeyToken=null

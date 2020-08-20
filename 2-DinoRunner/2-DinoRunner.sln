@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-DinoRunner", "2-DinoRunner.csproj", "{EDCD2DD9-4693-F4EB-575E-56C40E96B037}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-DinoRunner.Editor.Plugins", "2-DinoRunner.Editor.Plugins.csproj", "{90CB2B23-E19A-FE90-3309-D32B59DEB3A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-DinoRunner.Plugins", "2-DinoRunner.Plugins.csproj", "{1CFD2DAD-30AA-AC23-9B8F-883204D949D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDCD2DD9-4693-F4EB-575E-56C40E96B037}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDCD2DD9-4693-F4EB-575E-56C40E96B037}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDCD2DD9-4693-F4EB-575E-56C40E96B037}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDCD2DD9-4693-F4EB-575E-56C40E96B037}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90CB2B23-E19A-FE90-3309-D32B59DEB3A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90CB2B23-E19A-FE90-3309-D32B59DEB3A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90CB2B23-E19A-FE90-3309-D32B59DEB3A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90CB2B23-E19A-FE90-3309-D32B59DEB3A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CFD2DAD-30AA-AC23-9B8F-883204D949D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CFD2DAD-30AA-AC23-9B8F-883204D949D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CFD2DAD-30AA-AC23-9B8F-883204D949D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CFD2DAD-30AA-AC23-9B8F-883204D949D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
