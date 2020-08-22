@@ -62,6 +62,41 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\GPSController.cs" />
+    <Compile Include="Assets\SwapDirection.cs" />
+    <Compile Include="Assets\SwapNumbers.cs" />
+    <Compile Include="Assets\SwitchPrefab.cs" />
+    <Compile Include="Assets\Wikitude\Dependencies\Platform.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\CameraSettingsController.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\ContinuousRecognitionController.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\ExtendedImageTrackingController.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\ExtendedObjectTrackingController.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\InputPlugin\CustomCameraController.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\InputPlugin\CustomCameraRenderer.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\InputPlugin\SimpleInputPluginController.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\InstantTracking\DockUI.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\InstantTracking\GridRenderer.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\InstantTracking\InstantTrackingController.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\InstantTracking\LoadInstantTarget.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\InstantTracking\MoveController.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\InstantTracking\PlaneRenderer.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\InstantTracking\SaveInstantTarget.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\InstantTracking\ScaleController.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\InstantTracking\SceneDescription.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\InstantTracking\ScenePickingController.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\MenuController.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\MultipleTargets\Dinosaur.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\MultipleTargets\MultipleTargetsController.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\MultipleTrackersController.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\ObjectTrackingController.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\PluginController.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\RuntimeTrackerController.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\SampleController.cs" />
+    <Compile Include="Assets\Wikitude\Samples\Scripts\SingleRecognitionController.cs" />
+    <None Include="Assets\Wikitude\Samples\Shaders\TransparentShadowReceiver.shader" />
+    <None Include="Assets\Wikitude\Dependencies\link.xml" />
+    <None Include="Assets\Wikitude\Samples\Shaders\OccluderShader.shader" />
+    <None Include="Assets\Wikitude\Samples\Shaders\TransparentTextureColor.shader" />
+    <None Include="Assets\Wikitude\Samples\Shaders\ScanEffect.shader" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/Workspace/0-UnityWorkspace/1-Projects/9-GPS_and_Compass/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
@@ -268,6 +303,18 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.5f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="WikitudeBridge">
+      <HintPath>D:/Workspace/0-UnityWorkspace/1-Projects/9-GPS_and_Compass/Assets/Wikitude/Dependencies/WikitudeBridge.dll</HintPath>
+    </Reference>
+    <Reference Include="WikitudeUnityPlugin">
+      <HintPath>D:/Workspace/0-UnityWorkspace/1-Projects/9-GPS_and_Compass/Assets/Wikitude/Dependencies/WikitudeUnityPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsEditorBridge">
+      <HintPath>D:/Workspace/0-UnityWorkspace/1-Projects/9-GPS_and_Compass/Assets/Wikitude/Dependencies/WindowsEditorBridge.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.unity">
+      <HintPath>D:/Workspace/0-UnityWorkspace/1-Projects/9-GPS_and_Compass/Assets/Wikitude/Samples/Scripts/zxing.unity.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/Anuj/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>

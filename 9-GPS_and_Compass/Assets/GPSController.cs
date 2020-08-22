@@ -5,12 +5,18 @@ using System;
 
 public class GPSController : MonoBehaviour
 {
-    public GameObject cube;
+    //  public GameObject cube;
+
+    //  public GameObject compassNeedle;
 
     string message = "Initializing GPS...";
     float thisLat;
     float thisLong;
     DateTime epoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Local);
+    public static float distance = 0;
+    public static float heading = 0;
+
+    float startLat, startLong;
 
     private void OnGUI()
     {
@@ -61,13 +67,33 @@ public class GPSController : MonoBehaviour
             message = "Latitude: " + Input.location.lastData.latitude + 
                 "\nLong: " + Input.location.lastData.longitude + 
                 "\nAltitude: " + Input.location.lastData.altitude + 
-                "\nHorizontal nAccuracy: " + Input.location.lastData.horizontalAccuracy +
-                "\nVertical nAccuracy: " + Input.location.lastData.verticalAccuracy +
+                "\nHorizontal Accuracy: " + Input.location.lastData.horizontalAccuracy +
+                "\nVertical Accuracy: " + Input.location.lastData.verticalAccuracy +
                 "\n======\nHeading" + Input.compass.trueHeading;
+
+            startLat = Input.location.lastData.latitude;
+            startLong = Input.location.lastData.longitude;
         }
 
-        // Stop service if there is no need to query location updates continuously
+        //  Stop service if there is no need to query location updates continuously
         //  Input.location.Stop();
+    }
+
+    float Haversine(float lat1, float long1, float lat2, float long2)
+    {
+        float earthRadius = 6371000;
+        float lRad1 = lat1 * Mathf.Deg2Rad;
+        float lRad2 = lat2 * Mathf.Deg2Rad;
+        float dLat = (lat2 - lat1) * Mathf.Deg2Rad;
+        float dLong = (long2 - long1) * Mathf.Deg2Rad;
+
+        float a = Mathf.Sin(dLat / 2.0f) * Mathf.Sin(dLat / 2.0f) +
+            Mathf.Cos(lRad1) * Mathf.Cos(lRad2) *
+            Mathf.Sin(dLong / 2.0f) * Mathf.Sin(dLong / 2.0f);
+
+        float c = 2 * Mathf.Atan2(Mathf.Sqrt(a), Mathf.Sqrt(1 - a));
+
+        return earthRadius * c; //  in meters
     }
 
     // Use this for initialization
@@ -84,9 +110,29 @@ public class GPSController : MonoBehaviour
         thisLat = Input.location.lastData.latitude;
         thisLong = Input.location.lastData.longitude;
 
-        message = "Current Lat: " + thisLat +
+        distance = Haversine(startLat, startLong, thisLat, thisLong);
+        heading = Input.compass.trueHeading;
+
+        //  compassNeedle.transform.localRotation = Quaternion.Euler(0, 0, heading);
+
+        /* message = "Current Lat: " + thisLat +
             "\nCurrent Long: " + thisLong +
             "\nUpdate Time: " + lastUpdate.ToString("HH:mm:ss") +
             "\nNow: " + rightNow.ToString("HH:mm:ss");
-	}
+        */
+
+        message = "Distance: " + distance +
+            "\nHeading: " + heading +
+            "\nUpdate Time: " + lastUpdate.ToString("HH:mm:ss") +
+            "\nNow: " + rightNow.ToString("HH:mm:ss") + 
+            "\nOutputDirection" + SwapDirection.outputDirection;
+
+        /*
+        if (thisLong >= 77.4363)
+            //  show cube
+            cube.SetActive(true);
+        else
+            cube.SetActive(false);
+        */
+    }
 }
